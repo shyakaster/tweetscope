@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160921073249) do
+ActiveRecord::Schema.define(version: 20160921091751) do
 
   create_table "keywords", force: :cascade do |t|
     t.string   "keyword",    limit: 255
@@ -19,4 +19,12 @@ ActiveRecord::Schema.define(version: 20160921073249) do
     t.datetime "updated_at",             null: false
   end
 
+  create_table "tweets", force: :cascade do |t|
+    t.text    "tweet",      limit: 65535
+    t.integer "keyword_id", limit: 4
+  end
+
+  add_index "tweets", ["keyword_id"], name: "index_tweets_on_keyword_id", using: :btree
+
+  add_foreign_key "tweets", "keywords"
 end
