@@ -15,6 +15,13 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'bootstrap-sass', '~> 3.3.6'
 
+#CarrierWave gem for uploading images
+gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
+#amazon S3 gem configuration
+gem "fog-aws"
+#for hiding sensitive credentials
+gem "figaro"
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
