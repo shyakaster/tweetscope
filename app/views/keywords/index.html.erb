@@ -15,6 +15,7 @@
         <tbody>
         <% @keywords.each do |keyword| %>
             <tr>
+              <td><%= image_tag(keyword.image.thumb.url, width: '100') if keyword.image? %></td>
               <td><%= keyword.keyword %></td>
               <td><%= link_to 'Show', keyword, class:'btn btn-primary' %></td>
               <td><%= link_to 'Edit', edit_keyword_path(keyword), class:'btn btn-warning' %></td>
