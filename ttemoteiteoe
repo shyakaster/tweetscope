@@ -1,0 +1,53 @@
+[33mcommit 6cd8b9c800630b863ff57825655da0d135c23a6b[m
+Author: alex shyaka <shyakaster@gmail.com>
+Date:   Thu Sep 22 10:21:46 2016 +0300
+
+    remove database.yml from repo
+
+[33mcommit 5ebe0233ce6c1b384cadb05f3f23e377d4f542af[m
+Author: alex shyaka <shyakaster@gmail.com>
+Date:   Thu Sep 22 10:15:10 2016 +0300
+
+    add database.yml file to gitignore and ruby version to the gemfile
+
+[33mcommit 40e3dcd03bf93dc99d14095cce7a24c03000cf39[m
+Author: alex shyaka <shyakaster@gmail.com>
+Date:   Thu Sep 22 09:47:09 2016 +0300
+
+    add styling to show and edit page
+
+[33mcommit b81e2419c8767ac51195ea99cc362c30b51a656d[m
+Author: alex shyaka <shyakaster@gmail.com>
+Date:   Wed Sep 21 17:51:03 2016 +0300
+
+    add carrier wave
+
+[33mcommit 763df51c88414b214edc208eb0c5b928c98017d3[m
+Author: alex shyaka <shyakaster@gmail.com>
+Date:   Wed Sep 21 15:42:54 2016 +0300
+
+    add carrierwave functionality for uploads
+
+[33mcommit b045950bc838408133a4389946c018676fa02c45[m
+Author: alex shyaka <shyakaster@gmail.com>
+Date:   Wed Sep 21 12:24:38 2016 +0300
+
+    add referential integrity to models keyword and tweet
+
+[33mcommit faa74ef999ee91414c52ed45d06c068a26717b26[m
+Author: alex shyaka <shyakaster@gmail.com>
+Date:   Wed Sep 21 11:55:00 2016 +0300
+
+    add bootstrap styling to keyword forms
+
+[33mcommit 94f5a5bbb5b0e7051af01bffb243532fb175bf49[m
+Author: alex shyaka <shyakaster@gmail.com>
+Date:   Wed Sep 21 11:15:02 2016 +0300
+
+    add pg gem
+
+[33mcommit c62fe1b0b0586ea5e7bbca9c2fe4d2a531c38cce[m
+Author: alex shyaka <shyakaster@gmail.com>
+Date:   Wed Sep 21 10:53:48 2016 +0300
+
+    Initial repository
