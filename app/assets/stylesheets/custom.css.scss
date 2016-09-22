@@ -4,7 +4,8 @@
 
 .show-page {
   display: table;
-  padding: 120px 0;
+  padding: 120px 0 40px;
+
 }
 .edit-form{
   display: table;
@@ -26,6 +27,12 @@ footer{
   text-align: center;
   background: black;
   color: white;
+}
+.latest-tweets{
+  display: table;
+}
+.latest-tweets h2 ul{
+  display: table-cell;
 }
 
 span{
