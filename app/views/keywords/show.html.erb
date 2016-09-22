@@ -1,15 +1,16 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-8 col-sm-2">
+    <div class=" show-page col-sm-8 col-sm-offset-2">
       <p id="notice"><%= notice %></p>
-
+      <p><%= image_tag(@keyword.image.url) if @keyword.image? %></p>
       <p>
         <strong>Keyword:</strong>
+
         <%= @keyword.keyword %>
       </p>
 
-      <%= link_to 'Edit', edit_keyword_path(@keyword), class:'btn btn-warning' %> |
-      <%= link_to 'Back', keywords_path, class:'btn btn-primary' %>
+      <%= link_to 'Edit', edit_keyword_path(@keyword), class:'btn btn-warning btn-lg' %> |
+      <%= link_to 'Back', keywords_path, class:'btn btn-primary btn-lg' %>
 
     </div>
   </div>

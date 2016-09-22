@@ -5,8 +5,12 @@ class ImageUploader < CarrierWave::Uploader::Base
    include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
-  #storage :file
-   storage :fog
+   if Rails.env.development?
+     storage :file
+   else
+     storage :fog
+   end
+
    #storage = Fog::Storage.new(credentials.merge({:region => DEFAULT_REGION}))
 
   # Override the directory where uploaded files will be stored.
@@ -31,6 +35,9 @@ class ImageUploader < CarrierWave::Uploader::Base
   # end
 
   # Create different versions of your uploaded files:
+   version :thumb do
+     process resize_to_fit: [50, 50]
+   end
    version :thumb do
      process resize_to_fit: [200, 200]
    end

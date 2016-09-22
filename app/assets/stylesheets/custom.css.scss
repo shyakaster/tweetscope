@@ -2,3 +2,18 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.show-page {
+  display: table;
+  padding: 120px 0;
+}
+.edit-form{
+  display: table;
+  padding: 120px 0;
+}
+
+.show-page p{
+  display: table-cell;
+}
+.edit-form form h1 {
+  display: table-cell;
+}
