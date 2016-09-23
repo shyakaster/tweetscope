@@ -29,6 +29,10 @@ gem "mini_magick"
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
+gem 'will_paginate'
+
+#the booststrap version
+gem 'will_paginate-bootstrap'
 
 # Twitter gem
 gem 'twitter'

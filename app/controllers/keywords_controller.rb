@@ -4,13 +4,15 @@ class KeywordsController < ApplicationController
   # GET /keywords
   # GET /keywords.json
   def index
-    @keywords = Keyword.all
+    @keywords = Keyword.paginate(:page => params[:page], :per_page => 30)
   end
 
   # GET /keywords/1
   # GET /keywords/1.json
   def show
-    @keyword.grab_tweets
+    #@tweets=@keyword.grab_tweets
+    @tweets=@keyword.tweets.order("created_at DESC").page(params[:page]).per_page(10)
+
   end
 
   # GET /keywords/new
@@ -70,6 +72,6 @@ class KeywordsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def keyword_params
-      params.require(:keyword).permit(:keyword, :image, :image_cache)
+      params.require(:keyword).permit(:keyword, :image)
     end
 end
