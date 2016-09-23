@@ -127,6 +127,7 @@ GEM
     multipart-post (2.0.0)
     mysql2 (0.4.4-x86-mingw32)
     naught (1.1.0)
+    newrelic_rpm (3.16.2.321)
     nokogiri (1.6.8-x86-mingw32)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
@@ -247,6 +248,7 @@ DEPENDENCIES
   jquery-rails
   mini_magick
   mysql2 (>= 0.3.13, < 0.5)
+  newrelic_rpm
   omniauth
   omniauth-facebook
   omniauth-twitter

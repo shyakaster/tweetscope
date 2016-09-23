@@ -30,6 +30,8 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'will_paginate'
+#monitoring app performance
+gem 'newrelic_rpm'
 
 #the booststrap version
 gem 'will_paginate-bootstrap'
