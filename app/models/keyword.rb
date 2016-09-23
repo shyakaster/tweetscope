@@ -1,5 +1,5 @@
 class Keyword < ActiveRecord::Base
-    has_many :tweets
+    has_many :tweets, dependent: :destroy
     mount_uploader :image, ImageUploader
     def grab_tweets
       client = Twitter::REST::Client.new do |config|
@@ -8,7 +8,7 @@ class Keyword < ActiveRecord::Base
         config.access_token        = '18158734-IoUb64MxW1RlXMhQ5mZwiD9N1Mc3Negbz5z8K88Jh'
         config.access_token_secret = 'WD4zvUG0hRVO2wKdzqM7JUQWXpWSRqBkGOmUjdxQCweNt'
       end
-      client.search(self.keyword, result_type: "recent").take(3).collect do |tweet|
+      client.search(self.keyword, result_type: "recent").take(100).collect do |tweet|
         new_tweet = Tweet.new
         new_tweet.tweet_id= tweet.id.to_s
         new_tweet.tweet_created_at=tweet.created_at
@@ -22,5 +22,9 @@ class Keyword < ActiveRecord::Base
         new_tweet.save
       end
     end
-
+    def self.grab_all_tweets
+      Keyword.all.each do |keyword|
+        keyword.grab_tweets
+      end
+    end
 end
