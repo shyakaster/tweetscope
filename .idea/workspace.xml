@@ -48,8 +48,8 @@
       <file leaf-file-name="newrelic.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7531645" vertical-offset="0" max-vertical-offset="935">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.6455696" vertical-offset="0" max-vertical-offset="935">
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -885,8 +885,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7531645" vertical-offset="0" max-vertical-offset="935">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.6455696" vertical-offset="0" max-vertical-offset="935">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
           <folding />
         </state>
       </provider>
