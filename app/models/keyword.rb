@@ -8,7 +8,7 @@ class Keyword < ActiveRecord::Base
         config.access_token        = '18158734-IoUb64MxW1RlXMhQ5mZwiD9N1Mc3Negbz5z8K88Jh'
         config.access_token_secret = 'WD4zvUG0hRVO2wKdzqM7JUQWXpWSRqBkGOmUjdxQCweNt'
       end
-      client.search(self.keyword, result_type: "recent").take(100).collect do |tweet|
+      client.search(self.keyword, count: 100, result_type: "recent").take(100).collect do |tweet|
         new_tweet = Tweet.new
         new_tweet.tweet_id= tweet.id.to_s
         new_tweet.tweet_created_at=tweet.created_at
