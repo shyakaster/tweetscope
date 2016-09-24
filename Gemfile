@@ -33,6 +33,7 @@ gem 'will_paginate'
 #monitoring app performance
 gem 'newrelic_rpm'
 
+gem 'rack-timeout'
 #the booststrap version
 gem 'will_paginate-bootstrap'
 
@@ -61,9 +62,11 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
-
+gem 'puma'
 group :production do
   gem 'pg'
+  #gem 'unicorn'
+
 end
 
 group :development do
